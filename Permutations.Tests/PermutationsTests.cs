@@ -40,5 +40,37 @@
 
             Assert.That(result, Is.Empty);
         }
+
+        [Test]
+        public void GetPermutationsSingleList_EmptyList_ReturnsEmptyList()
+        {
+            IEnumerable<int> result = Permutations.GetPermutationsSingleList(new List<int>());
+
+            Assert.That(result, Is.Empty);
+        }
+
+        [Test]
+        public void GetPermutationsSingleList_SingleElementList_ReturnsSinglePermutation()
+        {
+            IEnumerable<int> result = Permutations.GetPermutationsSingleList([1]);
+
+            Assert.That(result, Is.EqualTo(new List<int> { 1 }));
+        }
+
+        [Test]
+        public void GetPermutationsSingleList_TwoElementList_ReturnsTwoPermutations()
+        {
+            IEnumerable<int> result = Permutations.GetPermutationsSingleList([1, 2]);
+
+            Assert.That(result, Is.EqualTo(new List<int> { 1, 2, 2, 1 }));
+        }
+
+        [Test]
+        public void GetPermutationsSingleList_NullList_ReturnsEmptyList()
+        {
+            IEnumerable<int> result = Permutations.GetPermutationsSingleList((IEnumerable<int>)null!);
+
+            Assert.That(result, Is.Empty);
+        }
     }
 }
