@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <SignAssembly>False</SignAssembly>
+    <ErrorReport>prompt</ErrorReport>
+    <Title>Permutations</Title>
+    <Version>1.0.0</Version>
+    <Authors>lyndychivs</Authors>
+    <Description>Generates permutations of an Enumeration set like so; [1, 2] -&gt; [1, 2], [2, 1].</Description>
+    <PackageProjectUrl>https://github.com/lyndychivs/Permutations</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/lyndychivs/Permutations</RepositoryUrl>
+    <PackageTags>generate;permutation;permutations;outcomes;reorder</PackageTags>
+    <PackageId>lyndychivs.Permutations</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ApplicationIcon>Resources\Permutations.ico</ApplicationIcon>
+    <PackageIcon>Permutations.png</PackageIcon>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <IncludeSymbols>False</IncludeSymbols>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+    <DebugType>embedded</DebugType>
+    <WarningLevel>9999</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+    <WarningLevel>9999</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Permutations.ico" />
+    <None Remove="Resources\Permutations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Permutations.ico" />
+    <EmbeddedResource Include="Resources\Permutations.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
