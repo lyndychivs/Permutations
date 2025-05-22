@@ -3,7 +3,7 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class PermutationsTests
+    internal class PermutationsTests
     {
         [Test]
         public void GetPermutations_EmptyList_ReturnsEmptyList()

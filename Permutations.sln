@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations.Tests", "Permutations.Tests\Permutations.Tests.csproj", "{6C5279A6-919C-4A7A-A45A-48E440C6175B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations.PerformanceTests", "Permutations.PerformanceTests\Permutations.PerformanceTests.csproj", "{640EA57D-8DD8-47FD-8C12-ED23A6560B38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{6C5279A6-919C-4A7A-A45A-48E440C6175B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C5279A6-919C-4A7A-A45A-48E440C6175B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C5279A6-919C-4A7A-A45A-48E440C6175B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640EA57D-8DD8-47FD-8C12-ED23A6560B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640EA57D-8DD8-47FD-8C12-ED23A6560B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640EA57D-8DD8-47FD-8C12-ED23A6560B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640EA57D-8DD8-47FD-8C12-ED23A6560B38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
