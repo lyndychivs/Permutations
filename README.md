@@ -1,4 +1,4 @@
-[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FPermutations%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Permutations/master)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FPermutations%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Permutations/main)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/lyndychivs.Permutations?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/lyndychivs.Permutations/)
 
 # lyndychivs.Permutations
@@ -12,7 +12,7 @@ var result = Permutations.GetPermutations([1, 2]);
 ```
 
 ## Tests
-All Unit Tests can be found under the [Permutations.Tests](https://github.com/lyndychivs/Permutations/tree/master/Permutations.Tests) namespace.
+All Unit Tests can be found under the [Permutations.Tests](https://github.com/lyndychivs/Permutations/tree/main/Permutations.Tests) namespace.
 
 ## Package
 Available on:

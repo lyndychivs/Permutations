@@ -1,30 +1,29 @@
-﻿namespace Permutations.PerformanceTests
+namespace Permutations.PerformanceTests;
+
+using BenchmarkDotNet.Attributes;
+
+public class PermutationsTests
 {
-    using BenchmarkDotNet.Attributes;
+    private readonly int[] inputs;
 
-    public class PermutationsTests
+    public PermutationsTests()
     {
-        private readonly int[] inputs;
-
-        public PermutationsTests()
+        inputs = new int[10_000];
+        for (int i = 0; i < inputs.Length; i++)
         {
-            inputs = new int[10_000];
-            for (int i = 0; i < inputs.Length; i++)
-            {
-                inputs[i] = i;
-            }
+            inputs[i] = i;
         }
+    }
 
-        [Benchmark(Baseline = true)]
-        public void GetPermutations_With10_000CyclesOfInt()
-        {
-            _ = Permutations.GetPermutations(inputs);
-        }
+    [Benchmark(Baseline = true)]
+    public void GetPermutations_With10_000CyclesOfInt()
+    {
+        _ = Permutations.GetPermutations(inputs);
+    }
 
-        [Benchmark]
-        public void GetPermutationsSingleList_With10_000CyclesOfInt()
-        {
-            _ = Permutations.GetPermutationsSingleList(inputs);
-        }
+    [Benchmark]
+    public void GetPermutationsSingleList_With10_000CyclesOfInt()
+    {
+        _ = Permutations.GetPermutationsSingleList(inputs);
     }
 }

@@ -1,12 +1,33 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.36105.23
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{A7E21619-53AC-4A39-9D90-25D77803816E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations.Tests", "Permutations.Tests\Permutations.Tests.csproj", "{6C5279A6-919C-4A7A-A45A-48E440C6175B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations.PerformanceTests", "Permutations.PerformanceTests\Permutations.PerformanceTests.csproj", "{640EA57D-8DD8-47FD-8C12-ED23A6560B38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FC57D1B-FFA3-4BDB-BD43-E0285E0EBE9F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		SECURITY.md = SECURITY.md
+		stryker-config.json = stryker-config.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{A21A5388-73A8-4983-8DFE-B1456FEE12D1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\FUNDING.yml = .github\FUNDING.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C647F3A5-0067-4EE2-84BA-E63A4D63FDF9}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-test-publish.yml = .github\workflows\build-test-publish.yml
+		.github\workflows\dotnet-stryker-action.yml = .github\workflows\dotnet-stryker-action.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +50,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C647F3A5-0067-4EE2-84BA-E63A4D63FDF9} = {A21A5388-73A8-4983-8DFE-B1456FEE12D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C11211FB-CCB3-4C5D-A0BF-55D0763C2DFE}
