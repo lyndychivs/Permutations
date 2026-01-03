@@ -1,4 +1,4 @@
-namespace Permutations.PerformanceTests;
+namespace Permutations.Performance.Tests;
 
 using BenchmarkDotNet.Attributes;
 
@@ -16,14 +16,14 @@ public class PermutationsTests
     }
 
     [Benchmark(Baseline = true)]
-    public void GetPermutations_With10_000CyclesOfInt()
+    public void Get_With10_000CyclesOfInt()
     {
-        _ = Permutations.GetPermutations(inputs);
+        _ = Permutations.Get(inputs);
     }
 
     [Benchmark]
-    public void GetPermutationsSingleList_With10_000CyclesOfInt()
+    public void GetSingleList_With10_000CyclesOfInt()
     {
-        _ = Permutations.GetPermutationsSingleList(inputs);
+        _ = Permutations.GetSingleList(inputs);
     }
 }

@@ -1,6 +1,6 @@
-﻿using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Running;
 
-using Permutations.PerformanceTests;
+using Permutations.Performance.Tests;
 
 internal class Program
 {

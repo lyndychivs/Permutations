@@ -1,30 +1,32 @@
 namespace Permutations.Tests;
 
+using System.Collections.Generic;
+
 using NUnit.Framework;
 
 [TestFixture]
 internal class PermutationsTests
 {
     [Test]
-    public void GetPermutations_EmptyList_ReturnsEmptyList()
+    public void Get_EmptyList_ReturnsEmptyList()
     {
-        IEnumerable<IEnumerable<int>> result = Permutations.GetPermutations(new List<int>());
+        IEnumerable<IEnumerable<int>> result = Permutations.Get(new List<int>());
 
         Assert.That(result, Is.Empty);
     }
 
     [Test]
-    public void GetPermutations_SingleElementList_ReturnsSinglePermutation()
+    public void Get_SingleElementList_ReturnsSinglePermutation()
     {
-        IEnumerable<IEnumerable<int>> result = Permutations.GetPermutations([1]);
+        IEnumerable<IEnumerable<int>> result = Permutations.Get([1]);
 
         Assert.That(result, Is.EqualTo(new List<IEnumerable<int>> { new List<int> { 1 } }));
     }
 
     [Test]
-    public void GetPermutations_TwoElementList_ReturnsTwoPermutations()
+    public void Get_TwoElementList_ReturnsTwoPermutations()
     {
-        IEnumerable<IEnumerable<int>> result = Permutations.GetPermutations([1, 2]);
+        IEnumerable<IEnumerable<int>> result = Permutations.Get([1, 2]);
 
         Assert.That(result, Is.EquivalentTo(new List<IEnumerable<int>>
         {
@@ -34,41 +36,41 @@ internal class PermutationsTests
     }
 
     [Test]
-    public void GetPermutations_NullList_ReturnsEmptyList()
+    public void Get_NullList_ReturnsEmptyList()
     {
-        IEnumerable<IEnumerable<int>> result = Permutations.GetPermutations((IEnumerable<int>)null!);
+        IEnumerable<IEnumerable<int>> result = Permutations.Get((IEnumerable<int>)null!);
 
         Assert.That(result, Is.Empty);
     }
 
     [Test]
-    public void GetPermutationsSingleList_EmptyList_ReturnsEmptyList()
+    public void GetSingleList_EmptyList_ReturnsEmptyList()
     {
-        IEnumerable<int> result = Permutations.GetPermutationsSingleList(new List<int>());
+        IEnumerable<int> result = Permutations.GetSingleList(new List<int>());
 
         Assert.That(result, Is.Empty);
     }
 
     [Test]
-    public void GetPermutationsSingleList_SingleElementList_ReturnsSinglePermutation()
+    public void GetSingleList_SingleElementList_ReturnsSinglePermutation()
     {
-        IEnumerable<int> result = Permutations.GetPermutationsSingleList([1]);
+        IEnumerable<int> result = Permutations.GetSingleList([1]);
 
         Assert.That(result, Is.EqualTo(new List<int> { 1 }));
     }
 
     [Test]
-    public void GetPermutationsSingleList_TwoElementList_ReturnsTwoPermutations()
+    public void GetSingleList_TwoElementList_ReturnsTwoPermutations()
     {
-        IEnumerable<int> result = Permutations.GetPermutationsSingleList([1, 2]);
+        IEnumerable<int> result = Permutations.GetSingleList([1, 2]);
 
         Assert.That(result, Is.EqualTo(new List<int> { 1, 2, 2, 1 }));
     }
 
     [Test]
-    public void GetPermutationsSingleList_NullList_ReturnsEmptyList()
+    public void GetSingleList_NullList_ReturnsEmptyList()
     {
-        IEnumerable<int> result = Permutations.GetPermutationsSingleList((IEnumerable<int>)null!);
+        IEnumerable<int> result = Permutations.GetSingleList((IEnumerable<int>)null!);
 
         Assert.That(result, Is.Empty);
     }
