@@ -27,8 +27,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{A21A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C647F3A5-0067-4EE2-84BA-E63A4D63FDF9}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\build-test-publish.yml = .github\workflows\build-test-publish.yml
 		.github\workflows\dotnet-stryker-action.yml = .github\workflows\dotnet-stryker-action.yml
+		.github\workflows\build-test.yml = .github\workflows\build-test.yml
+		.github\workflows\release.yaml = .github\workflows\release.yaml
 	EndProjectSection
 EndProject
 Global
