@@ -6,7 +6,7 @@
     <ItemGroup>
         <PackageVersion Include="BenchmarkDotNet" Version="0.*" />
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.*" />
-        <PackageVersion Include="NUnit" Version="4.*" />
+        <PackageVersion Include="NUnit" Version="5.*" />
         <PackageVersion Include="NUnit.Analyzers" Version="4.*" />
         <PackageVersion Include="NUnit3TestAdapter" Version="6.*" />
     </ItemGroup>
